@@ -4,10 +4,10 @@ from main import EmployeeDatabase
 from unittest.mock import Mock
 
 db = mysql.connector.connect(
-            host="localhost",
-            user="Daniel",
-            password="Goldbergerova1",
-            database="EmployeeData")
+            host="",
+            user="",
+            password="",
+            database="")
 mycursor = db.cursor()
 
 
