@@ -7,8 +7,6 @@ db = mysql.connector.connect(
     database="EmployeeData")
 mycursor = db.cursor()
 
-# mycursor.execute("CREATE TABLE Employees(emp_id INT PRIMARY KEY AUTO_INCREMENT, first_name VARCHAR(50),last_name VARCHAR(50),age INT(10), gender ENUM('M','F'),salary INT)")
-
 class EmployeeDatabase():
     def __init__(self, firstname, lastname, age, gender, salary):
         self.firstname = firstname
@@ -52,17 +50,6 @@ emp1 = EmployeeDatabase("Daniel","Bejček",29,"M",10000)
 emp2 = EmployeeDatabase("Tereza","Vojtěchová",25,"F",9000)
 emp3 = EmployeeDatabase("John","Doe",30,"M",50000)
 multi_emp = [("Daniel","Bejček",29,"M",10000), ("Tereza","Vojtěchová",25,"F",9000)]
-
-# mycursor.execute("ALTER TABLE employees MODIFY COLUMN emp_id INT default = 1")
-# mycursor.execute("ALTER TABLE employees AUTO_INCREMENT = 1")
-# mycursor.execute("DELETE FROM employees WHERE emp_id BETWEEN 10 AND 20")
-
-
-# emp2.add_employee()
-# emp3.remove_employee(68)
-# emp2.remove_multiple_employees(30,98)
-# emp1.add_multiple_employees(multi_emp)
-# emp1.get_employee(27)
 
 
 
