@@ -1,10 +1,10 @@
 import mysql.connector
 
 db = mysql.connector.connect(
-    host="localhost",
+    host="",
     user="",
     password="",
-    database="EmployeeData")
+    database="")
 mycursor = db.cursor()
 
 class EmployeeDatabase():
